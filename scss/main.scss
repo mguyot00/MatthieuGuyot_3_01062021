@@ -8,21 +8,38 @@ $whitesmoke: #f6f6f6;
 $grey: #e6e6e6;
 
 
+@keyframes heart {
+    0% {
+        opacity: 0;
+    }
 
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 @media screen and (max-width:768px) {
 
-    h1 {
-        font-size: 1.6em;
-        font-family: 'shirkhand';
-      
-
+    h2 {
+        font-size: 1.5em;
+        font-family: 'roboto', "sans-serif";
     }
 
     h3 {
         font-family: 'roboto', "sans-serif";
-        font-size: 1.2em;  
-      }
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+
+    h4 {
+        font-family: 'roboto', "sans-serif";
+        font-size: 1.1em;
+
+    }
 
     body {
         margin: 0;
@@ -68,24 +85,20 @@ $grey: #e6e6e6;
             border: none;
             background-color: $grey;
             font-family: "roboto";
-            font-weight: bolder;
             font-size: 1.1em;
+
         }
 
-        h2 {
-            font-size: 1.1em;
-            font-family: 'roboto';
-        }
 
         .btn_exp {
             border-radius: 50px 50px;
-            background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+            background-image: linear-gradient(to top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
             font-family: 'roboto';
-            padding: 18px;
+            padding: 15px;
             margin-bottom: 40px;
             margin-top: 10px;
             color: white;
-            font-weight: bolder;
+            font-weight: 500;
             font-size: 1.1em;
             border: none;
             box-shadow: 1px 2px 8px 2px #c4c4c4;
@@ -96,9 +109,9 @@ $grey: #e6e6e6;
 
     .fonctionnement {
 
-        h1 {
-            margin-left: 20px;
-        }
+        margin-left: 20px;
+
+
 
         .etapes {
 
@@ -108,11 +121,37 @@ $grey: #e6e6e6;
                 background-color: $whitesmoke;
                 border-radius: 25px 25px 25px 25px;
                 padding: 13px;
-                margin-right: 20px;
                 margin-bottom: 20px;
                 box-shadow: 1px 2px 8px 2px #c4c4c4;
                 cursor: pointer;
+                width: 100%;
+
+
+
+                &:hover {
+                    background-color: lighten(#9356dc, 30%);
+                    background-blend-mode: lighten;
+                }
+
+
+                i {
+                    position: absolute;
+                    margin-left: 30px;
+                    margin-top: 17px;
+                    color: gray;
+
+                    &:hover {
+                        color: #9356dc;
+                    }
+
+
+
+                }
+
             }
+
+
+
 
 
 
@@ -122,13 +161,7 @@ $grey: #e6e6e6;
 
             }
 
-            i {
-                position: absolute;
-                margin-left: 30px;
-                margin-top: 17px;
-                color: gray;
-
-            }
+            
 
             .etapes--num {
 
@@ -144,6 +177,7 @@ $grey: #e6e6e6;
                 font-weight: bolder;
                 padding: 3px;
 
+
             }
 
         }
@@ -155,32 +189,38 @@ $grey: #e6e6e6;
 
         background-color: #f2f2f2;
 
-        h1 {
+        h2 {
             margin-left: 20px;
+
         }
 
         .main__restaurant {
             display: flex;
             flex-wrap: wrap;
-            
+
         }
 
         .carte {
             border-radius: 25px;
             width: 100%;
             box-shadow: 4px 4px 6px #aaa;
-            margin: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
             position: relative;
             background: #fff;
         }
 
         .btn__nouveau {
+            border-radius: 2px;
+            box-shadow: 0px 0px 5px gray;
+            background-color: #99E2D0;
+            right: 15px;
+            top: 13px;
+            color: hsl(165, 56%, 40%);
             position: absolute;
-            margin-left: 240px;
-            margin-top: 20px;
-            padding: 5px;
-            background-color: $tertiaire;
-            font-weight: bolder;
+            height: 20px;
+            padding: 3px 10Px;
         }
 
         img {
@@ -190,25 +230,39 @@ $grey: #e6e6e6;
             border-top-right-radius: 25px;
             width: 100%;
             height: 100%;
-            height: 220px;
+            height: 180px;
         }
 
         .coeur {
             display: flex;
             justify-content: flex-end;
             float: right;
-            margin-top: -45px;
+            margin-top: -40px;
+            font-size: 0.9em;
+            color: black;
+            cursor: pointer;
+        }
 
+        i:hover {
+            animation: heart 0.5s ease-in-out;
+            background-color: $whitesmoke;
+            background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            font-weight: bolder;
+            opacity: 1;
+            display: inline-block;
         }
 
 
         figure {
-            margin: 0;
+            margin: 0px;
         }
 
         figcaption {
-            margin: 0;
-            padding: 10px;
+            margin: 15px;
+            line-height: 0.5;
+
         }
 
         a {
@@ -217,65 +271,46 @@ $grey: #e6e6e6;
         }
 
 
-         
-
-           
-        
-
-
-
     }
 
     footer {
+        position: relative;
         background-color: #353535;
         padding: 25px;
         color: white;
-      }
-        h2 {
-          font-family: "Shrikhand";
-          padding: 5px 0 5px 0;
-          font-size: 1.5em;
-          font-weight: 500;
-          margin-left: 38px;
-        }
+    }
 
-        ul {
-          list-style-type: none;
-      
-          li {
+    h1 {
+        font-family: "Shrikhand", "sans-serif";
+        padding: 5px 0 5px 0;
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+
+            margin-left: -40px;
             padding: 5px 0 5px 0;
-      
-            a {
-              color: white;
-              text-decoration: none;
-            }
-          }
-        }
 
-        .fa-utensils {
-            margin-right: 12px;
-          
-          }
-          .fa-hands-helping {
-            margin-right: 5px;
-          }
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .fa-utensils {
+        margin-right: 12px;
+
+    }
+
+    .fa-hands-helping {
+        margin-right: 5px;
+    }
+
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
