@@ -1,0 +1,27 @@
+.recherche {
+    text-align: center;
+    background-color: $whitesmoke;
+    
+    .barre_recherche {
+
+        background-color: $grey;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 50px;
+
+    }
+
+    .icon_loca {
+        padding-right: 5px;
+        font-size: 1.2em;
+    }
+
+
+    input {
+        border: none;
+        background-color: $grey;
+        font-family: "roboto";
+        font-size: 1.1em;
+   }
+
+}

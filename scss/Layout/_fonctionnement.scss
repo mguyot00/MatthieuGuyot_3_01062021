@@ -1,0 +1,119 @@
+.fonctionnement {
+
+    margin-left: 20px;
+
+    .etapes {
+
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            display: flex;
+            background-color: $whitesmoke;
+            border-radius: 25px 25px 25px 25px;
+            padding: 13px;
+            margin-bottom: 20px;
+            margin-right: 10px;
+            box-shadow: 1px 2px 8px 2px #c4c4c4;
+            cursor: pointer;
+            width: 30%;
+            &:hover {
+                background-color: lighten(#9356dc, 30%);
+                background-blend-mode: lighten;
+
+            }
+
+            i {
+                position: absolute;
+                margin-left: 30px;
+                margin-top: 15px;
+                color: gray;
+                font-size: 1.2em;
+
+
+            }
+
+        }
+
+        li:hover i {
+            color: #9356dc;
+
+        }
+
+
+        p {
+            margin-left: 70px;
+            font-weight: bolder;
+
+        }
+
+        .etapes--num {
+        @include etapes--num;
+        }
+
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .fonctionnement {
+
+        margin-left: 20px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+
+
+
+        .etapes {
+
+            display: flex;
+            flex-wrap: wrap;
+
+
+            li {
+                width: 100%;
+            }
+
+            .etapes--num {
+                width: 5%;
+            }
+
+        }
+
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1025px) {
+
+    .fonctionnement {
+
+
+
+        .etapes {
+
+            display: flex;
+            justify-content: space-between;
+
+
+
+            li {
+                width: 28%;
+            }
+
+            i {
+                margin-top: 22px;
+            }
+
+            .etapes--num {
+                width: 3%;
+
+            }
+        }
+
+     
+    }
+}

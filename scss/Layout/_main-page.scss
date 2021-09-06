@@ -1,0 +1,165 @@
+main {
+
+    img {
+      width: 100%;
+      margin-top: -20px;
+      height: 350px;
+      object-fit: cover;
+    }
+  
+    .main__menu {
+  
+      background-color: $whitesmoke;
+      border-radius: 50px 50px 0px 0px;
+      padding: 25px 0px 0px 0px;
+      position: relative;
+      margin-top: -50px;
+      width: 100%;
+  
+    }
+  
+    .menu__title {
+      font-size: 1.1em;
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+
+    @import ".components/heart-page";
+  
+  
+  
+  .meals{
+    @include meals;
+  }
+  
+    .d1 {
+      animation-delay: 0s;
+    }
+  
+    .d2 {
+      animation-delay: 0.1s;
+    }
+  
+    .d3 {
+      animation-delay: 0.2s;
+    }
+  
+    .d4 {
+      animation-delay: 0.3s;
+    }
+  
+    .d5 {
+      animation-delay: 0.4s;
+    }
+  
+    .d6 {
+      animation-delay: 0.5s;
+    }
+  
+    .d7 {
+      animation-delay: 0.66s;
+    }
+  
+    .d8 {
+      animation-delay: 0.7s;
+    }
+  
+    .d9 {
+      animation-delay: 0.8s;
+    }
+  
+   .cross {
+    @include cross;
+    }
+
+    .last__line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      line-height: 1.5em;
+  
+    }
+  
+    .last__line p {
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  
+    .last__line p {
+      padding-right: 20px;
+    }
+  
+    .last__line span {
+      margin-right: 5px;
+    }
+  
+    .meals h4 {
+      margin: 0;
+    }
+  
+  @import ".components/btn-commander";
+  
+}
+
+  @media (min-width:950px)and (max-width: 1135px) {
+
+
+    .full__menu {
+      display: flex;
+  
+  
+  
+  
+    }
+  
+    .starter {
+      width: 32%;
+  
+    }
+  
+  
+    .dish {
+      margin-left: 20px;
+      width: 32%;
+      margin-right: 10px;
+    }
+  
+  
+    .dessert {
+  
+      width: 32%;
+  
+    }
+  
+  
+  
+  
+  }
+  
+  
+  @media screen and (min-width: 1135px) {
+  
+    .full__menu {
+      display: flex;
+    }
+  
+    .starter {
+      width: 35%;
+    }
+  
+  
+    .dish {
+      margin-left: 20px;
+      width: 35%;
+      margin-right: 10px;
+    }
+  
+  
+    .dessert {
+      width: 35%;
+    }
+  
+  
+  }
