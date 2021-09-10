@@ -18,8 +18,8 @@
     }
 
     .carte {
-       @include carte;
-    }
+        @include carte;
+     }
 
     img {
 
@@ -51,26 +51,19 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
 
     .restaurant {
 
-        
-       
-        
-        
-        h2 {
-            margin-right: 220px;
-            position: relative;
-            margin-top: 50px;
-        }
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 40px;
+     
+      .restaurant__titre {
+          margin-bottom: 55px;
+          margin-top: 15px;
+      }
 
-
-        .main__restaurant {
-            display: flex;
-            justify-content: space-around;
-
-        }
 
 
         .carte {
@@ -91,31 +84,24 @@
 
 }
 
-@media (min-width: 769px) and (max-width: 1025px) {
+@media (min-width: 770px) and (max-width: 1100px) {
 
     .restaurant {
-        h2 {
-
-            left: 0%;
+        .restaurant__titre {
+            margin-top: 10px;
+            margin-bottom: -60px;
         }
-
-
-
+        
 
         .main__restaurant {
             display: flex;
-            justify-content: space-around;
             flex-wrap: wrap;
-
         }
-
 
         .carte {
 
             width: 100%;
-            margin-left: 30px;
-            margin-top: 80px;
-            margin-bottom: 20px;
+            margin-left: 20px; 
 
         }
 
