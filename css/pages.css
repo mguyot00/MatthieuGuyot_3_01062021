@@ -118,9 +118,8 @@ h2 {
 h3 {
   margin-left: 15px;
   text-transform: uppercase;
-  border-bottom: 3px solid #99E2D0;
-  width: 8%;
   line-height: 1.5;
+  
 }
 
 header {
@@ -165,6 +164,38 @@ main .menu__title {
   margin-left: -20px;
 }
 
+
+.starter__title::after{
+  content: '';
+  display: block;
+  margin-left: 16px;
+  margin-top: -16px;
+  width: 40px;
+  height: 3px;
+  background: #99E2D0;
+}
+
+.dish__title::after{
+  content: '';
+  display: block;
+  margin-left: 16px;
+  margin-top: -16px;
+  width: 40px;
+  height: 3px;
+  background: #99E2D0;
+}
+
+.dessert__title::after{
+  content: '';
+  display: block;
+  margin-left: 16px;
+  margin-top: -16px;
+  width: 40px;
+  height: 3px;
+  background: #99E2D0;
+}
+
+
 main .fill__heart {
   float: right;
   margin-top: -65px;
@@ -201,6 +232,7 @@ main .meals {
   overflow: hidden;
   -webkit-transition: padding-right 450ms ease-in-out;
   transition: padding-right 450ms ease-in-out;
+  animation: slideDown 850ms ease-in-out;
 }
 
 main .d1 {
@@ -366,7 +398,13 @@ footer {
   background-color: #353535;
   padding: 25px;
   color: white;
+ 
 }
+
+footer h1 {
+  margin-top: -10px;
+}
+
 
 footer ul {
   list-style-type: none;
