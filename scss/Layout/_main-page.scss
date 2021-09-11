@@ -1,5 +1,9 @@
 main {
 
+  
+
+  
+
     img {
       width: 100%;
       margin-top: -20px;
@@ -15,6 +19,7 @@ main {
       position: relative;
       margin-top: -50px;
       width: 100%;
+      
   
     }
   
@@ -22,6 +27,37 @@ main {
       font-size: 1.1em;
       margin-top: -20px;
       margin-left: -20px;
+    }
+
+    
+    .starter__title::after{
+      content: '';
+      display: block;
+      margin-left: 16px;
+      margin-top: -16px;
+      width: 40px;
+      height: 3px;
+      background: #99E2D0;
+    }
+    
+    .dish__title::after{
+      content: '';
+      display: block;
+      margin-left: 16px;
+      margin-top: -16px;
+      width: 40px;
+      height: 3px;
+      background: #99E2D0;
+    }
+    
+    .dessert__title::after{
+      content: '';
+      display: block;
+      margin-left: 16px;
+      margin-top: -16px;
+      width: 40px;
+      height: 3px;
+      background: #99E2D0;
     }
 
     @import ".components/heart-page";
@@ -100,7 +136,7 @@ main {
     }
   
   @import ".components/btn-commander";
-  
+ 
 }
 
   @media (min-width:950px)and (max-width: 1135px) {

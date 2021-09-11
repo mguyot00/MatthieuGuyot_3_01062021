@@ -1,11 +1,12 @@
-header {
-    text-align: center;
-    
+.header {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 5px 10px lightgray;
+}
 
-    img {
-        width: 200px;
-        margin-top: 20px;
-        margin-bottom: 5px;
-        
-    }
+Header img {
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+
 }
