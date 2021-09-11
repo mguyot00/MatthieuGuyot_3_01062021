@@ -45,6 +45,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
     transition: padding-right 450ms ease-in-out;
+    animation: slideDown 850ms ease-in-out;
 
     &:hover {
         padding-right: 50px;
