@@ -103,6 +103,10 @@ main {
     .d9 {
       animation-delay: 0.8s;
     }
+
+    .d10 {
+      animation-delay: 1s;
+    }
   
    .cross {
     @include cross;
