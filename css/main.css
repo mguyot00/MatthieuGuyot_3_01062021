@@ -531,6 +531,7 @@ i:hover {
   -webkit-box-shadow: 1px 2px 5px 1px black;
           box-shadow: 1px 2px 5px 1px black;
           background-color: lighten (#9356dc, 8%);
+          background-blend-mode: lighten;
     
 }
 
