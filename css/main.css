@@ -529,7 +529,7 @@ i:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
           box-shadow: 1px 2px 5px 1px black;
-          background-color: lighten(#9356dc, 8%);
+          -webkit-background-color: lighten(#9356dc, 8%);
           background-blend-mode: lighten;
 }
 
