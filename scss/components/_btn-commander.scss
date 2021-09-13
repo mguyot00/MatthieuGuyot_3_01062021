@@ -12,12 +12,17 @@
     padding: 20px;
     padding-left: 40px;
     padding-right: 40px;
+    
 
 
   }
 
   button:hover {
     transform: scale(1.05);
+      box-shadow: 1px 2px 5px 1px black;
+      background-color: lighten(#9356dc, 8%);
+      background-blend-mode: lighten;
+  
   }
 
   .btn__commander {
